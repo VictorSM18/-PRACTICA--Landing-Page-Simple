@@ -101,7 +101,7 @@ header {
     color: #111729;
 }
 
-#mode {
+.theme-toggle {
     background-color: #111729;
     width: 3rem;
     height: 1.5rem;
@@ -266,8 +266,19 @@ h1 {
     }
 
     #navbar,
-    #mode {
+    .theme-toggle {
         display: none;
+    }
+
+    .theme-toggle-mobile {
+        background-color: #111729;
+        width: 3rem;
+        height: 1.5rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
     }
 
     #section-main {
