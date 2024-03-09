@@ -289,18 +289,24 @@ h1 {
     }
 
     .toggle-menu {
+        background-image: url("assets/hamburguer-icon.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 1.5rem;
         z-index: 1;
         border: none;
         background-color: transparent;
         position: absolute;
-        width: 3rem;
         right: 1rem;
         top: 0.5rem;
         cursor: pointer;
     }
 
-    .toggle-menu > img {
-        object-fit: cover;
+    .toggle-menu[aria-expanded="true"] {
+        background-image: url("assets/x-solid.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-left: 1.25rem;
     }
 
     .mobile-navlist {
