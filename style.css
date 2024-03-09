@@ -80,6 +80,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .nav-list {
@@ -205,16 +206,23 @@ h1 {
 }
 
 #section-image {
-    width: 500px;
+    max-width: 500px;
 }
 
-.mobile-nav {
+.mobile-navlist {
     display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .dark-theme {
     background-color: #111729 !important;
     color: #f2f9fe !important;
+}
+
+.dark-theme .nav-list > a:hover {
+    color: #f2f9fe;
 }
 
 @media screen and (width > 640px) and (width <= 1024px) {
@@ -287,12 +295,12 @@ h1 {
     }
 
     .second-p {
-        width: 30rem;
         text-wrap: pretty;
     }
 
     h1 {
         width: 100%;
+        font-size: 2.5em;
     }
 
     .mobile-nav {

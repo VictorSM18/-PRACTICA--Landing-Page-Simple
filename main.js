@@ -37,23 +37,4 @@ toggleDarkBtn.addEventListener("click", () => {
     firstParagraphTag.classList.toggle("dark-theme");
     alaradoLogo.classList.toggle("dark-theme");
 
-    for (let navElement of navElements) {
-        if (document.body.className == "dark-theme") {
-            navElement.addEventListener("mouseover", () => {
-                navElement.style.color = "#f2f9fe";
-            });
-
-            navElement.addEventListener("mouseout", () => {
-                navElement.style.color = "#909193";
-            });
-        } else {
-            navElement.addEventListener("mouseover", () => {
-                navElement.style.color = "#111729";
-            });
-
-            navElement.addEventListener("mouseout", () => {
-                navElement.style.color = "#909193";
-            });
-        }
-    }
 });
